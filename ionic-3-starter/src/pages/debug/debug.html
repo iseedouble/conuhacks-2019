@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>debug</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngFor="let page of Object.keys(pages)">
+    <button ion-button [navPush]="pages[page]">{{page}}</button>
+  </div>
+</ion-content>

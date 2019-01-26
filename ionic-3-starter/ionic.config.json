@@ -1,0 +1,7 @@
+{
+  "name": "cutePuppyPics",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
