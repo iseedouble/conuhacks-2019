@@ -5,5 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-
+  <button ion-button (click)="onCameraPreview()">camera preview</button>
+  <canvas #image></canvas>
+  {{result}}
 </ion-content>

@@ -8,7 +8,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DebugPage } from '../pages/debug/debug';
 
-import { Camera } from '@ionic-native/camera/ngx';
+import { Camera } from '@ionic-native/camera';
+import { CameraPreview } from "@ionic-native/camera-preview";
 import { CameraPage } from '../pages/camera/camera';
 
 @NgModule({
@@ -32,7 +33,8 @@ import { CameraPage } from '../pages/camera/camera';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Camera
+    Camera,
+    CameraPreview
   ]
 })
 export class AppModule {}
