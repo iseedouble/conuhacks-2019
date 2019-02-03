@@ -98,9 +98,9 @@ saveButton.onclick = () => {
 serverPredict.onclick = () => {
   snapshot();
   
-  // fetch('http://localhost:3000/classify', {
+  fetch('http://localhost:3000/classify', {
   // fetch('http://localhost:3000/mobilenet', {
-  fetch('https://classitrash-server.herokuapp.com/mobilenet', {
+  // fetch('https://classitrash-server.herokuapp.com/mobilenet', {
     method: "POST",
     headers: {
       'Accept': 'application/json',
